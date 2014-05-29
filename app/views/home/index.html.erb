@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+  <title>Get Involved</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/assets/bootstrap-3.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../vendor/assets/bootstrap-3.1.1/dist/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="../../../vendor/assets/bootstrap-3.1.1/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="../../../vendor/assets/bootstrap-3.1.1/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="../../../vendor/assets/bootstrap-3.1.1/less/carousel.less" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Custom styles for this template -->
+  <link href="../assets/stylesheets/carousel.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Get Involved</a>
+        </div>
+        <div class="navbar-collapse collapse" >
+          <ul class="nav navbar-nav" >
+            <li><a href="#about">About</a></li>
+            <li><a href="#ourstory">Our Story</a></li>
+            <li><%= link_to "Stories", stories_path %></li>
+            <li><%= link_to "Create User", new_user_path %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="container">
+        <%= image_tag("slide1.svg", alt: "First Slide") %>
+        <div class="carousel-caption">
+          <h1>We connect helpers to other helpers!</h1>
+          <p>Whether you have a great cause, or just want to help, you're in the right spot.  We match great "Stories" with great people that are willing to help.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign Up!</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("slide1.svg", alt: "Second Slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Lead the Charge!</h1>
+          <p>Do you know of a great cause, but need help getting it completed?  You're in the right spot, start a story now.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Create a Story!</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <%= image_tag("slide1.svg", alt: "Third Slide") %>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Contribute to a Cause!</h1>
+          <p>Are you looking for more ways to help others? You're in the right spot, search for stories that need help here.</p>
+          <p><a class="btn btn-lg btn-primary" href="#" role="button">Find a Story</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-4">
+      <%= image_tag("Time_Energy_Button140x.jpg", :class => "img-circle", alt: "Generic placeholder image") %>
+      <h2>Time and Energy</h2>
+      <p>Great opportunities exist to participate, give your time, your energy and your knowledge.</p>
+      <p>Mentor, train, build, clean, hands on help.</p>
+      <p><a class="btn btn-default" href="#" role="button">Sign Up &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <%= image_tag("headshot140x.jpg", :class => "img-circle", alt: "Generic placeholder image") %>
+      <h2>Goods and Supplies</h2>
+      <p>Less time and money, but you have things that could help a project.  Loan them or donate them to the cause.  It goes along way!</p>
+      <p>Sporting Goods, Meeting Spaces, Gift Cards, Access to Places, Transportation.</p>
+      <p><a class="btn btn-default" href="#" role="button">Find a Story &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <%= image_tag("cash140x.jpg", :class => "img-circle", alt: "Generic placeholder image") %>
+      <h2>Cashola!</h2>
+      <p>If just donating money is your style, we appreciate it very much!  Find a cause and donate directly to them.</p>
+      <p>Likewise, if you find our platform to be as awesome as we do, we also run off of donations!</p>
+      <p><a class="btn btn-default" href="#" role="button">Donate Now &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+
+
+  <!-- START THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Inner City Ski Trip. <span class="text-muted">Let them experience the Pow.</span></h2>
+      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    </div>
+    <div class="col-md-5">
+      <%= image_tag("500x500.svg", :class => "featurette-image img-responsive", alt: "Generic placeholder image") %>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-5">
+      <%= image_tag("500x500.svg", :class => "featurette-image img-responsive", alt: "Generic placeholder image") %>
+    </div>
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Inspire kids to program. <span class="text-muted">Help the next generation.</span></h2>
+      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Help Foothills Elementary build playground. <span class="text-muted"> Kids should be outside.</span></h2>
+      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+    </div>
+    <div class="col-md-5">
+      <%= image_tag("500x500.svg", :class => "featurette-image img-responsive", alt: "Generic placeholder image") %>
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="../../assets/js/docs.min.js"></script>
+</body>
+</html>
